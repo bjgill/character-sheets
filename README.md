@@ -1,6 +1,4 @@
 # TTB-character-sheets
-Character sheets for the Through the Breach RPG
+A non-magical character sheet template for use in the Through the Breach RPG. Written using LaTex.
 
-Written in LibreOffice for ease of creating a large number of tables.
-
-On page 1, some of the derived aspects and skill AVs are automatically calculated.
+Old reference version in odf (LibreOffice) format also available, but unmaintained.
