@@ -1,0 +1,486 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{tabu}
+\usepackage{fullpage}
+\usepackage{wasysym}
+
+% table header
+\newcommand{\tabhead}[1]{\textsc{\small \textcolor{white}{#1}}\cellcolor{black}}
+
+% table title
+\newcommand{\tabtit}[1]{\textbf{\uppercase{\large #1}}}
+
+\newcommand{\m}{$-$}
+\newcommand{\p}{$+$}
+
+\begin{document}
+
+\twocolumn
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X|}
+    \hline 
+		\multicolumn{2}{|c|}{\tabhead{Fated Name}} \\ 
+		\hline 
+		\multicolumn{2}{|c|}{Henry Martin} \\ 
+		\hline 
+		\tabhead{Current Pursuit} & \tabhead{Station} \\  
+		\hline 
+		Infiltrator & Reporters \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|X|X[0.5c]|}
+    \multicolumn{4}{c}{\tabtit{Aspects}} \\
+    \hline 
+	  \multicolumn{2}{|c}{\tabhead{Physical}} & \multicolumn{2}{|c|}{\tabhead{Mental}} \\ 
+	  \hline 
+	  \tabhead{Might} & \m 2 & \tabhead{Intellect} & \p 3 \\ 
+	  \hline 
+	  \tabhead{Grace} & \p 2 & \tabhead{Charm} & \p 0 \\ 
+	  \hline 
+	  \tabhead{Speed} & \p 1 & \tabhead{Cunning} & \p 1 \\ 
+	  \hline 
+	  \tabhead{Resilience} & \m 1 & \tabhead{Tenacity} & \m 2 \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|X|X[0.5c]|}
+    \multicolumn{4}{c}{\tabtit{Derived Aspects}} \\
+	  \hline 
+	  \tabhead{Defence} & 3 & \tabhead{Willpower} & 4 \\ 
+	  \hline 
+	  \tabhead{Armour} & 0 & \tabhead{Initiative} & 2 \\ 
+	  \hline 
+	  \tabhead{Walk} & 5 & \tabhead{Charge} & 5 \\ 
+	  \hline 
+	  \tabhead{Wounds} & ~~/7 & \tabhead{Height} & 2 \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+% attacks 1
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \multicolumn{4}{c}{\tabtit{Attacks}} \\
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  Volyer Patent Revolver & 4 & 2/3/4 & 10 \\ 
+	  \hline 
+	  \tabhead{Special} & \tabhead{Reload} & \tabhead{Capacity} & \tabhead{TN} \\ 
+	  \hline 
+	  ~ & 4 AP & ~~/7 & ~ \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{•} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+% attacks 2
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  • & • & • & • \\ 
+	  \hline 
+	  \tabhead{Special} & \tabhead{Reload} & \tabhead{Capacity} & \tabhead{TN} \\ 
+	  \hline 
+	  • & • & •/• & • \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{•} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+%attacks 3
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  • & • & • & • \\ 
+	  \hline 
+	  \tabhead{Special} & \tabhead{Reload} & \tabhead{Capacity} & \tabhead{TN} \\ 
+	  \hline 
+	  • & • & •/• & • \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{•} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\begin{minipage}[t]{\textwidth}
+\section*{Pursuit Benefits}
+Draw a card upon failing a Deceive or Stealth check
+\end{minipage}
+
+\newpage
+
+% player name, money, destiny fulfilled and experience
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[2]|X[c]|}
+    \hline 
+		\tabhead{Player Name} & \tabhead{Guild Scrip} \\  
+		\hline 
+		Benjamin Gill & §0.9 \\ 
+		\hline
+		\tabhead{Destiny Steps Fulfilled} & \tabhead{Experience} \\  
+		\hline 
+		% use \Circle for unfilled and \CIRCLE for filled
+		\makebox[0.6 \columnwidth][s]{$\Circle$ $\Circle$ $\Circle$ $\Circle$ $\Circle$} & 1 \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+% skills
+\setlength\tabcolsep{3pt} % default value: 6pt
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|c|c|l|c|X[c]|}
+	  \multicolumn{6}{c}{\tabtit{Skills}} \\
+	  \hline 
+	  % Tr is for any triggers. Format is [S][c] - Suit, condition, e.g. Ts for Tomes success.
+	  \tabhead{Skill} & \tabhead{AV} & \tabhead{Rate} & \tabhead{Aspect} & \tabhead{$\pm$} & \tabhead{Tr}\\ 
+	  \hline 
+	  Barter & 0 & 2 & Tenacity & \p & ~ \\ 
+	  \hline 
+	   Bureaucracy & 3 & 2 & Cunning & • & • \\ 
+	   \hline 
+	   Centring & 0 & 2 & Tenacity & • & • \\ 
+	   \hline 
+	   Convince & 5 & 2 & Intellect & • & • \\ 
+	   \hline 
+	   Deceive & 6 & 3 & Intellect & \p & Ts \\ 
+	   \hline 
+	   Forgery & 3 & 2 & Cunning & \p & • \\ 
+	   \hline 
+	   Literacy & 2 & 1 & Cunning & • & • \\ 
+	   \hline 
+	   Notice & 2 & 1 & Cunning & ~ & • \\ 
+	   \hline 
+	   Pistol & 4 & 2 & Grace & • & • \\ 
+	   \hline 
+	   Scrutiny & 6 & 5 & Cunning & • & Ms,Cs \\ 
+	   \hline 
+	   Stealth & 1 & 0 & Cunning & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	   \hline 
+	   • & • & • & • & • & • \\ 
+	  \hline
+	\end{tabu}
+\end{table}
+
+\setlength\tabcolsep{6pt} % default value: 6pt
+
+% party
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[1.5]|}
+	  \multicolumn{2}{c}{\tabtit{Party}} \\
+	  \hline 
+	  \tabhead{Character} & \tabhead{Notes} \\ 
+	  \hline 
+	  Gabriel D'Artois & Dandy  \\ 
+	  \hline 
+	  `Alfalfa' Jackie & Bayou guide/alchemist  \\ 
+	  \hline 
+	  `Jackie 2' & Robot Wizard \\ 
+	  \hline 
+	  Major Quigley & Mercenary -- owes me §5  \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\twocolumn
+
+% twist deck
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|}
+		\multicolumn{2}{c}{\tabtit{Twist Deck}} \\ 
+		\hline 
+		\tabhead{Total Card Improvements} & \p 1 \\ 
+		\hline 
+  \end{tabu} 
+	\begin{tabu} to \columnwidth {|X[c]|X[2]|}
+		\hline 
+		\tabhead{Card} & \tabhead{Description} \\ 
+		\hline 
+		13 & Tomes \\ 
+		\hline 
+		12 & Masks \\ 
+		\hline 
+		11 & Crows \\ 
+		\hline 
+		10 & Rams \\ 
+		\hline 
+		9 & Tomes \\ 
+		\hline 
+		8 & Masks \\ 
+		\hline 
+		7 & Crows \\ 
+		\hline 
+		6 & Rams \\ 
+		\hline 
+		6 & Tomes \\ 
+		\hline 
+		4 & Masks \\ 
+		\hline 
+		3 & Crows \\ 
+		\hline 
+		2 & Rams \\ 
+		\hline 
+		1 & Tomes \\ 
+		\hline 
+  \end{tabu} 
+\end{table}
+
+% notes
+\begin{minipage}[t]{\textwidth}
+
+\section*{Notes}
+
+\subsection*{Session 1}
+
+	\begin{itemize}
+	  \item Hatchino Chan -- workers going missing for two weeks, intensified 1 week ago.
+	  \item Hai Lin -- warehouse owner; important contact of the above.
+	  \item The Oni owes us a favour (after we `flushed out' the apothecary).
+	  \item §4 profit evenly split.
+	\end{itemize}
+
+\subsection*{Session 2} 
+
+  \begin{itemize}
+    \item Henry Kinder paid us to get him to Innocence. Failed.
+    \item Key phrase for banker: ``Susy together forever'' on soulstone dagger?
+    \item Income: §20 (already evenly split) (+§30 in soulstone powder). My expenses: §18.6 -- not yet accounted for. Distribution: §2.85 to others, §21.45 for me.
+  \end{itemize}
+  
+\subsection*{Session 3}
+
+  \begin{itemize}
+    \item Defend Innocence from the Neverborn?
+  \end{itemize}
+
+
+\end{minipage}
+
+\newpage
+
+% destiny
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\multicolumn{2}{c}{\tabtit{Destiny}} \\ 
+		\hline 
+		\tabhead{Southern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		When at last you look upon your beating heart & 8 Crows \\
+		\hline
+  \end{tabu} 
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Eastern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		The peer of a thousand faces will weep & 5 Masks \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Northern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		For the silence brings inspiration to your door & 8 Masks \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Western Destiny} & \tabhead{Card} \\ 
+		\hline 
+		The ravens bless your children & 4 Rams \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Station Destiny} & \tabhead{Card} \\ 
+		\hline 
+		And the arches will crumble & 7 Rams \\
+		\hline
+  \end{tabu}  
+\end{table}
+
+% second sheet
+\onecolumn
+
+% fated name
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[c]|}
+    \hline 
+		\tabhead{Fated Name} \\ 
+		\hline 
+		Henry Martin \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+% talents
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|l|X[4]|}
+		\multicolumn{3}{c}{\tabtit{Talents}} \\ 
+		\hline 
+		\tabhead{Source} & \tabhead{Talent} & \tabhead{Description} \\  
+		\hline 
+		Start & Twisted Fate & $\pm$ to 1 card in fate deck (no identical cards) \\   
+		\hline 
+		Infiltrator: 0 & Strike First & May add a single suit of choice to final duel total when I attack someone who believes me to be friendly and who has not yet acted in Dramatic Time \\   
+		\hline 
+		Infiltrator: 1 & Sneaky & + to Deceive challenge duels \\   
+		\hline 
+		Infiltrator: 2 & Skill Mastery & + to Barter challenge duels \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|l|l|l|X|}
+		\multicolumn{5}{c}{\tabtit{Triggers}} \\ 
+		\hline 
+		\tabhead{Skill} & \tabhead{Suit} & \tabhead{Activates} & \tabhead{Name} & \tabhead{Description} \\  
+		\hline  
+		Deceive & Tomes & Success & Revelation & Target is so thoroughly convinced that they now adopt your opinion \\   
+		\hline
+		Scrutiny & Masks & Success & Political Eye & Learn target's Allegiance, or their most closely associated organisation \\   
+		\hline  
+		Scrutiny & Crows & Success & Ready for Anything & In Narrative Time, gain ++ to Initiative if target performs an action leading to Dramatic Time \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline
+	\end{tabu}
+\end{table}
+
+\onecolumn
+
+% talents
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|X|}
+		\multicolumn{2}{c}{\tabtit{Equipment}} \\ 
+		\hline 
+		\tabhead{Item} & \tabhead{Description} \\  
+		\hline 
+		Forgery Toolkit & \p to Forgery challenge duels \\   
+		\hline 
+		Necessities & House/food/job/etc. \\   
+		\hline 
+		Volyer Patent Revolver & • \\   
+		\hline 
+		Legacy Charges & 48 \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+	\end{tabu}
+\end{table}
+
+\end{document}
