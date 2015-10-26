@@ -1,0 +1,466 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{tabu}
+\usepackage{fullpage}
+\usepackage{wasysym}
+
+% table header
+\newcommand{\tabhead}[1]{\textsc{\small \textcolor{white}{#1}}\cellcolor{black}}
+
+% table title
+\newcommand{\tabtit}[1]{\textbf{\uppercase{\large #1}}}
+
+\newcommand{\m}{$-$}
+\newcommand{\p}{$+$}
+
+\begin{document}
+
+\twocolumn
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X|}
+    \hline 
+		\multicolumn{2}{|c|}{\tabhead{Fated Name}} \\ 
+		\hline 
+		\multicolumn{2}{|c|}{•} \\ 
+		\hline 
+		\tabhead{Current Pursuit} & \tabhead{Station} \\  
+		\hline 
+		• & • \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|X|X[0.5c]|}
+    \multicolumn{4}{c}{\tabtit{Aspects}} \\
+    \hline 
+	  \multicolumn{2}{|c}{\tabhead{Physical}} & \multicolumn{2}{|c|}{\tabhead{Mental}} \\ 
+	  \hline 
+	  \tabhead{Might} & \m 1 & \tabhead{Intellect} & • \\ 
+	  \hline 
+	  \tabhead{Grace} & \p 0 & \tabhead{Charm} & • \\ 
+	  \hline 
+	  \tabhead{Speed} & \p 2 & \tabhead{Cunning} & • \\ 
+	  \hline 
+	  \tabhead{Resilience} & \m 1 & \tabhead{Tenacity} & • \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|X|X[0.5c]|}
+    \multicolumn{4}{c}{\tabtit{Derived Aspects}} \\
+	  \hline 
+	  \tabhead{Defence} & \m 1 & \tabhead{Willpower} & • \\ 
+	  \hline 
+	  \tabhead{Armour} & \p 0 & \tabhead{Initiative} & • \\ 
+	  \hline 
+	  \tabhead{Walk} & \p 2 & \tabhead{Charge} & • \\ 
+	  \hline 
+	  \tabhead{Wounds} & ~~/7 & \tabhead{Height} & • \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+% attacks 1
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \multicolumn{4}{c}{\tabtit{Attacks}} \\
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  • & • & • & • \\ 
+	  \hline 
+	  \tabhead{Special} & \tabhead{Reload} & \tabhead{Capacity} & \tabhead{TN} \\ 
+	  \hline 
+	  • & • & •/• & • \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{•} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+% attacks 2
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  • & • & • & • \\ 
+	  \hline 
+	  \tabhead{Special} & \tabhead{Reload} & \tabhead{Capacity} & \tabhead{TN} \\ 
+	  \hline 
+	  • & • & •/• & • \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{•} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+%attacks 3
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  • & • & • & • \\ 
+	  \hline 
+	  \tabhead{Special} & \tabhead{Reload} & \tabhead{Capacity} & \tabhead{TN} \\ 
+	  \hline 
+	  • & • & •/• & • \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{•} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\begin{minipage}[t]{\textwidth}
+\section*{Pursuit Benefits}
+•
+\end{minipage}
+
+\newpage
+
+% player name, money, destiny fulfilled and experience
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[2]|X[c]|}
+    \hline 
+		\tabhead{Player Name} & \tabhead{Guild Scrip} \\  
+		\hline 
+		• & • \\ 
+		\hline
+		\tabhead{Destiny Steps Fulfilled} & \tabhead{Experience} \\  
+		\hline 
+		% use \Circle for unfilled and \CIRCLE for filled
+		\makebox[0.6 \columnwidth][s]{$\Circle$ $\Circle$ $\Circle$ $\Circle$ $\Circle$} & • \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+% skills
+\setlength\tabcolsep{3pt} % default value: 6pt
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|c|c|l|c|X[c]|}
+	  \multicolumn{6}{c}{\tabtit{Skills}} \\
+	  \hline 
+	  % Tr is for any triggers. Format is [S][c] - Suit, condition, e.g. Ts for Tomes success.
+	  \tabhead{Skill} & \tabhead{AV} & \tabhead{Rate} & \tabhead{Aspect} & \tabhead{$\pm$} & \tabhead{Tr}\\ 
+	  \hline 
+	  • & • & • & • & • & • \\ 
+	  \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	   \hline 
+	   &  &  &  &  &  \\ 
+	  \hline
+	\end{tabu}
+\end{table}
+
+\setlength\tabcolsep{6pt} % default value: 6pt
+
+% party
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[2]|}
+	  \multicolumn{2}{c}{\tabtit{Party}} \\
+	  \hline 
+	  \tabhead{Character} & \tabhead{Notes} \\ 
+	  \hline 
+	  • & •  \\ 
+	  \hline 
+	  • & •  \\ 
+	  \hline 
+	  • & •  \\ 
+	  \hline 
+	  • & •  \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\twocolumn
+
+% twist deck
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|}
+		\multicolumn{2}{c}{\tabtit{Twist Deck}} \\ 
+		\hline 
+		\tabhead{Total Card Improvements} & • \\ 
+		\hline 
+  \end{tabu} 
+	\begin{tabu} to \columnwidth {|X[c]|X[2]|}
+		\hline 
+		\tabhead{Card} & \tabhead{Description} \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+		• & • \\ 
+		\hline 
+  \end{tabu} 
+\end{table}
+
+% notes
+\begin{minipage}[t]{\textwidth}
+
+\section*{Notes}
+
+\subsection*{Session 1}
+
+•
+
+\end{minipage}
+
+\newpage
+
+% destiny
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.2c]|}
+		\multicolumn{2}{c}{\tabtit{Destiny}} \\ 
+		\hline 
+		\tabhead{Southern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		• & • \\
+		\hline
+  \end{tabu} 
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.2c]|}
+		\hline 
+		\tabhead{Eastern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		• & • \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.2c]|}
+		\hline 
+		\tabhead{Northern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		• & • \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.2c]|}
+		\hline 
+		\tabhead{Western Destiny} & \tabhead{Card} \\ 
+		\hline 
+		• & • \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.2c]|}
+		\hline 
+		\tabhead{Station Destiny} & \tabhead{Card} \\ 
+		\hline 
+		• & • \\
+		\hline
+  \end{tabu}  
+\end{table}
+
+% second sheet
+\onecolumn
+
+% fated name
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[c]|}
+    \hline 
+		\tabhead{Fated Name} \\ 
+		\hline 
+		• \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+% talents
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|l|X[4]|}
+		\multicolumn{3}{c}{\tabtit{Talents}} \\ 
+		\hline 
+		\tabhead{Source} & \tabhead{Talent} & \tabhead{Description} \\  
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\   
+		\hline 
+		• & • & • \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|l|l|l|X|}
+		\multicolumn{5}{c}{\tabtit{Triggers}} \\ 
+		\hline 
+		\tabhead{Skill} & \tabhead{Suit} & \tabhead{Activates} & \tabhead{Name} & \tabhead{Description} \\  
+		\hline  
+		• & • & • & • & • \\   
+		\hline
+		• & • & • & • & • \\   
+		\hline  
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline 
+		• & • & • & • & • \\   
+		\hline
+	\end{tabu}
+\end{table}
+
+\onecolumn
+
+% talents
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|X|}
+		\multicolumn{2}{c}{\tabtit{Equipment}} \\ 
+		\hline 
+		\tabhead{Item} & \tabhead{Description} \\  
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+		• & • \\   
+		\hline 
+	\end{tabu}
+\end{table}
+
+\end{document}
