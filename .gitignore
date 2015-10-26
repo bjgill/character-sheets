@@ -45,8 +45,5 @@ Temporary Items
 *.log
 *.aux
 *.pdf
-<<<<<<< HEAD
-=======
 *.log
->>>>>>> refs/remotes/origin/master
 *.bak
