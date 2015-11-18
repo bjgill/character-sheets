@@ -144,13 +144,13 @@ Draw a card upon failing a Deceive or Stealth check
 		\tabhead{Destiny Steps Fulfilled} & \tabhead{Experience} \\  
 		\hline 
 		% use \Circle for unfilled and \CIRCLE for filled
-		\makebox[0.6 \columnwidth][s]{$\Circle$ $\Circle$ $\Circle$ $\Circle$ $\Circle$} & 2 \\ 
+		\makebox[0.6 \columnwidth][s]{$\Circle$ $\Circle$ $\Circle$ $\Circle$ $\Circle$} & 0 \\ 
 		\hline 
 	\end{tabu}
 \end{table}
 
 % skills
-\setlength\tabcolsep{4pt} % default value: 6pt
+\setlength\tabcolsep{3pt} % default value: 6pt
 
 \begin{table}[h!]
 	\begin{tabu} to \columnwidth {|l|c|c|l|c|X[c]|}
@@ -159,41 +159,43 @@ Draw a card upon failing a Deceive or Stealth check
 	  % Tr is for any triggers. Format is [S][c] - Suit, condition, e.g. Ts for Tomes success.
 	  \tabhead{Skill} & \tabhead{AV} & \tabhead{Rate} & \tabhead{Aspect} & \tabhead{$\pm$} & \tabhead{Tr}\\ 
 	  \hline 
-	  Barter & 1 & 3 & Tenacity & \p & Ms \\ 
+	  So:Barter & 0 & 2 & Tenacity & ~ & ~ \\ 
 	  \hline 
-	   Bureaucracy & 3 & 2 & Cunning &  &  \\ 
+	  Ac:Bureaucracy & 3 & 2 & Cunning & \p &  \\ 
 	   \hline 
-	   Centring & 0 & 2 & Tenacity &  &  \\ 
+	  Tr:Centring & 0 & 2 & Tenacity &  &  \\ 
 	   \hline 
-	   Convince & 5 & 2 & Intellect &  &  \\ 
+	  So:Convince & 5 & 2 & Intellect &  & \\ 
 	   \hline 
-	   Deceive & 6 & 3 & Intellect & \p & Ts \\ 
+    So:Deceive & 7 & 4 & Intellect & \p & Ts \\ 
+	  \hline 
+	  Ex:Forgery & 4 & 3 & Cunning & \p & Ms \\ 
 	   \hline 
-	   Forgery & 3 & 2 & Cunning & \p &  \\ 
+	  Ac:Literacy & 2 & 1 & Cunning &  &  \\ 
 	   \hline 
-	   Literacy & 2 & 1 & Cunning &  &  \\ 
+	  Tr:Notice & 2 & 1 & Cunning & ~ &  \\ 
 	   \hline 
-	   Notice & 2 & 1 & Cunning & ~ &  \\ 
+	  RC:Pistol & 4 & 2 & Grace &  & ~ \\ 
 	   \hline 
-	   Pistol & 4 & 2 & Grace &  &  \\ 
+	  Ex:Scrutiny & 6 & 5 & Cunning &  & Ms,Cs \\ 
 	   \hline 
-	   Scrutiny & 6 & 5 & Cunning &  & Ms,Cs \\ 
+	  So:Bewitch & 0 & 0 & Charm &  &  \\ 
 	   \hline 
-	   Stealth & 1 & 0 & Cunning &  &  \\ 
+	  Ex:Doctor & 3 & 0 & Intellect &  &  \\ 
+	  \hline 
+	  Ex:Gambling & 1 & 0 & Cunning &  &  \\ 
 	   \hline 
-	    &  &  &  &  &  \\ 
+	  Ac:History & 3 & 0 & Intellect &  &  \\ 
 	   \hline 
-	    &  &  &  &  &  \\ 
+	  So:Intimidate & -2 & 0 & Tenacity &  &  \\ 
 	   \hline 
-	    &  &  &  &  &  \\ 
+	  So:Leadership & 0 & 0 & Charm &  &  \\ 
 	   \hline 
-	    &  &  &  &  &  \\ 
+	  Ex:Lockpicking & 2 & 0 & Grace &  &  \\ 
 	   \hline 
-	    &  &  &  &  &  \\ 
+	  Tr:Stealth & 1 & 0 & Cunning &  &  \\ 
 	   \hline 
-	    &  &  &  &  &  \\ 
-	   \hline 
-	    &  &  &  &  &  \\ 
+    So:Teach & 3 & 0 & Intellect &  &  \\ 
 	   \hline 
 	    &  &  &  &  &  \\ 
 	   \hline 
@@ -309,7 +311,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		\tabhead{Eastern Destiny} & \tabhead{Card} \\ 
 		\hline 
-		The peer of a thousand faces will weep & 5 Masks \\
+		the peer of a thousand faces will weep & 5 Masks \\
 		\hline
   \end{tabu}  
   \vspace{1 pt}
@@ -318,7 +320,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		\tabhead{Northern Destiny} & \tabhead{Card} \\ 
 		\hline 
-		For the silence brings inspiration to your door & 8 Masks \\
+		for the silence brings inspiration at the door. & 8 Masks \\
 		\hline
   \end{tabu}  
   \vspace{1 pt}
@@ -327,7 +329,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		\tabhead{Western Destiny} & \tabhead{Card} \\ 
 		\hline 
-		The ravens bless your children & 4 Rams \\
+		Then, the ravens bless your children & 4 Rams \\
 		\hline
   \end{tabu}  
   \vspace{1 pt}
@@ -336,7 +338,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		\tabhead{Station Destiny} & \tabhead{Card} \\ 
 		\hline 
-		And the arches will crumble & 7 Rams \\
+		and the arches will crumble. & 7 Rams \\
 		\hline
   \end{tabu}  
 \end{table}
@@ -368,7 +370,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		Infiltrator: 1 & Sneaky & + to Deceive challenge duels \\   
 		\hline 
-		Infiltrator: 2 & Skill Mastery & + to Barter challenge duels \\   
+		Infiltrator: 2 & Skill Mastery & + to Bureaucracy challenge duels \\   
 		\hline 
 		Infiltrator: 3 & Disguised & Cannot be the target of a charge action \\   
 		\hline 
@@ -381,13 +383,12 @@ Draw a card upon failing a Deceive or Stealth check
 		 &  &  \\   
 		\hline 
 		 &  &  \\   
-		\hline  
-		 &  &  \\   
-		\hline 
+		\hline
 
 	\end{tabu}
 \end{table}
 
+% Triggers
 \begin{table}[h!]
 	\begin{tabu} to \columnwidth {|l|l|l|l|X|}
 		\multicolumn{5}{c}{\tabtit{Triggers}} \\ 
@@ -397,10 +398,10 @@ Draw a card upon failing a Deceive or Stealth check
 		Deceive & Tomes & Success & Revelation & Target is so thoroughly convinced that they now adopt your opinion \\   
 		\hline
 		Scrutiny & Masks & Success & Political Eye & Learn target's Allegiance, or their most closely associated organisation \\   
-		\hline  
-		Scrutiny & Crows & Success & Ready for Anything & In Narrative Time, gain ++ to Initiative if target performs an action leading to Dramatic Time \\   
 		\hline 
-		Barter & Masks & Success & Flatterer & Target becomes friendly and willing to assist with directions, gossip, or other forms of information \\   
+		Forgery & Masks & Success & Perfect Copy & Gain \p ~to any Convince or Deceive Challenge made regarding the forgery \\   
+		\hline  
+		Scrutiny & Crows & Success & Ready for Anything & In Narrative Time, gain \p\p ~to Initiative if target performs an action leading to Dramatic Time \\   
 		\hline 
 		 &  &  &  &  \\   
 		\hline 
@@ -424,7 +425,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		\tabhead{Item} & \tabhead{Description} \\  
 		\hline 
-		Forgery Toolkit & \p to Forgery challenge duels \\   
+		Forgery Toolkit & \p ~to Forgery challenge duels \\   
 		\hline 
 		Necessities & House/food/job/etc. \\   
 		\hline 
