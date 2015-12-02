@@ -83,7 +83,7 @@
 	  \hline 
 	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
 	  \hline 
-	  \multicolumn{4}{|l|}{} \\
+	  \multicolumn{4}{|l|}{Ms -- No Witnesses -- target gains \emph{Unbeknownst}} \\
 	  \hline 
 	\end{tabu}
 \end{table}
@@ -139,12 +139,12 @@ Draw a card upon failing a Deceive or Stealth check
     \hline 
 		\tabhead{Player Name} & \tabhead{Guild Scrip} \\  
 		\hline 
-		Benjamin Gill & §10.9 \\ 
+		Benjamin Gill & §15.9 \\ 
 		\hline
 		\tabhead{Destiny Steps Fulfilled} & \tabhead{Experience} \\  
 		\hline 
 		% use \Circle for unfilled and \CIRCLE for filled
-		\makebox[0.6 \columnwidth][s]{$\Circle$ $\Circle$ $\Circle$ $\Circle$ $\Circle$} & 1 \\ 
+		\makebox[0.6 \columnwidth][s]{$\Circle$ $\Circle$ $\Circle$ $\Circle$ $\Circle$} & 0 \\ 
 		\hline 
 	\end{tabu}
 \end{table}
@@ -161,7 +161,7 @@ Draw a card upon failing a Deceive or Stealth check
 	  \hline 
 	  So:Barter & 0 & 2 & Tenacity & ~ & ~ \\ 
 	  \hline 
-	  Ac:Bureaucracy & 3 & 2 & Cunning & \p &  \\ 
+	  Ac:Bureaucracy & 4 & 3 & Cunning & \p & Ts \\ 
 	   \hline 
 	  Tr:Centring & 0 & 2 & Tenacity &  &  \\ 
 	   \hline 
@@ -229,7 +229,9 @@ Draw a card upon failing a Deceive or Stealth check
 	  \hline 
 	  `Jackie 2' & Robot Wizard \\ 
 	  \hline 
-	  Major Quigley & Mercenary -- owes me §5  \\ 
+	  Major Quigley & Mercenary  \\ 
+	  \hline
+	  `J'? & ??? hunter/boxer?  \\ 
 	  \hline
 	  Clay Reyes & Engineer (M\&SU) -- died \\
 	  \hline 
@@ -374,7 +376,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		Start & Twisted Fate & $\pm$ to 1 card in fate deck (no identical cards) \\   
 		\hline 
-		Infiltrator: 0 & Strike First & May add a single suit of choice to final duel total when I attack someone who believes me to be friendly and who has not yet acted in Dramatic Time \\   
+		Infiltrator: 0 & Strike First & May add a single suit of choice to  attack someone who believes me to be friendly or who has not yet acted in Dramatic Time \\   
 		\hline 
 		Infiltrator: 1 & Sneaky & + to Deceive challenge duels \\   
 		\hline 
@@ -384,9 +386,7 @@ Draw a card upon failing a Deceive or Stealth check
 		\hline 
 		Infiltrator: 4 & Specialised Skill & add Tomes to Deceive challenge duels \\   
 		\hline 
-		 &  &  \\   
-		\hline 
-		 &  &  \\   
+		Infiltrator: 5 & Betrayal & Gains + to attack someone who believes me to be friendly or who has not yet acted in Dramatic Time \\   
 		\hline 
 		 &  &  \\   
 		\hline 
@@ -398,24 +398,22 @@ Draw a card upon failing a Deceive or Stealth check
 
 % Triggers
 \begin{table}[h!]
-	\begin{tabu} to \columnwidth {|l|l|l|l|X|}
+	\begin{tabu} to \columnwidth {|l|l|l|X[0.2]|X|}
 		\multicolumn{5}{c}{\tabtit{Triggers}} \\ 
 		\hline 
 		\tabhead{Skill} & \tabhead{Suit} & \tabhead{Activates} & \tabhead{Name} & \tabhead{Description} \\  
-		\hline  
+		\hline   
+		Bureaucracy & Tomes & Success & Legal Documents & May produce documents to back up a claim. Any Social/Bureaucracy Challenges made to challenge the claim or change the mind of those who have seen the documents is at -. \\   
+		\hline 
 		Deceive & Tomes & Success & Revelation & Target is so thoroughly convinced that they now adopt your opinion \\   
 		\hline
-		Scrutiny & Masks & Success & Political Eye & Learn target's Allegiance, or their most closely associated organisation \\   
-		\hline 
 		Forgery & Masks & Success & Perfect Copy & Gain \p ~to any Convince or Deceive Challenge made regarding the forgery \\   
 		\hline  
 		Scrutiny & Crows & Success & Ready for Anything & In Narrative Time, gain \p\p ~to Initiative if target performs an action leading to Dramatic Time \\   
+		\hline
+		Scrutiny & Masks & Success & Political Eye & Learn target's Allegiance, or their most closely associated organisation \\   
 		\hline 
-		 &  &  &  &  \\   
-		\hline 
-		 &  &  &  &  \\   
-		\hline 
-		 &  &  &  &  \\   
+		Ranged/Close & Masks & Success & No Witnesses & Target gains \emph{Unbeknownst}: may not attack anyone with Disguised talent until the end of the round \\   
 		\hline 
 		 &  &  &  &  \\   
 		\hline 
@@ -450,10 +448,6 @@ Draw a card upon failing a Deceive or Stealth check
 		 &  \\   
 		\hline  
 		 &  \\   
-		\hline   
-		 &  \\   
-		\hline   
-		 &  \\   
 		\hline 
 	\end{tabu}
 \end{table}
@@ -469,7 +463,7 @@ Draw a card upon failing a Deceive or Stealth check
     \item Mr Callahan -- rival candidate: rural collectivist anarcho-communist
     \item Election within 7 days, electorate of ~250. Need 20 nominations.
     \item Alison Daid -- journalist: shares shop with Map-Maker
-    \item Widow Ferris -- saloon proprietor; husband died 5 years ago; is very insistent that we kill nobody; §10 now and § on election (each)
+    \item Widow Ferris -- saloon proprietor; husband died 5 years ago; is very insistent that we kill nobody; §10 now and §10 on election (each)
     \item Prof Wickers -- Union member and curiosity shop keeper
     \item Banker -- highly influential; follows the money
     \item Ortega -- influential with fighters
@@ -479,12 +473,22 @@ Draw a card upon failing a Deceive or Stealth check
 \subsection*{Session 4}
   
   \begin{itemize}
-    \item 6 days until vote
-    \item Ortega brought on side by Jackie, bringing 36 votes.
+    \item Ortega brought on side by Jackie, bringing 13 votes.
     \item Allison Daid is printing propaganda.
-    \item Madame Stoville -- heavily in debt to guild banks (§1500 = §100/month), Crow is taking care of it and blackmailing her.
+    \item Madame Stoville -- heavily in debt to guild banks (§1500 = §100/month), Crow is taking care of it and blackmailing her. I've forger documents to reduce debt
     \item Mysterious red-haired lady at saloon.
     \item Interesting persons: Mr Whistler, schoolmaster; Mitchells, expeditions; Derrick, local fighting pit; Tatterson Flay, haberdasher and creep/potential necromancer (though I do not know this).
+  \end{itemize}
+  
+\subsection*{Session 5}
+
+  \begin{itemize}
+    \item 5 days until vote
+    \item Doctor is a Ferris supporter (mysterious red-head) - secret things with robot
+    \item Innocence town estimated §200-300 tax per month
+    \item I convinced Callaghan to support us at the cost of being Deputy Mayor (and §20 printing costs)
+    \item Widow Ferris is scared by me, and has offered an extra §20 on election (§30 total). Should now be officially registered as a candidate.
+    \item `J's fight in the evening. I do not yet have firm plans.
   \end{itemize}
 
 \end{document}
