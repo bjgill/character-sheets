@@ -1,0 +1,36 @@
+\documentclass[10pt,a4paper,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{expl3}
+\ExplSyntaxOn
+\cs_new_eq:NN \Repeat \prg_replicate:nn
+\ExplSyntaxOff
+
+\begin{document}
+
+\newcommand{\smallbox}{\framebox(8,8){}}
+\newcommand{\boxitem}[3]{\item[\smallbox~~#1] - #2 - p.#3 - }
+\newcommand{\nboxitem}[4]{\item[\Repeat{#1}{\smallbox~}~#2] - #3 - p.#4 - }
+
+\section*{Illusionist (- Necromancy, Enchantment)}
+
+\subsection*{Cantrips}
+
+\begin{description}
+  \boxitem{Detect Magic}{Div}{267} Detects all spells and magic items within in a 60' cone. 
+  \boxitem{Ghost Sound}{Ill}{289} Figment sounds for 2 rounds in 30', the level of 8 humans/horde of rats.
+  \boxitem{Prestidigitation}{Uni}{325} Performs simple minor tricks for 1 hour.
+  \boxitem{Read Magic}{Div}{330} Read scrolls and spellbooks for 2'.
+\end{description}
+
+\subsection*{Level 1}
+
+\begin{description}
+  \nboxitem{4}{Colour Spray}{Ill}{256} Knocks unconscious, blinds, and/or stuns weak creatures in a 15' cone
+  \nboxitem{3}{Comprehend Languages}{Div}{258} - You understand all spoken and written languages for 20'.
+  \nboxitem{3}{Grease}{Con}{291} Makes 10' square or one object slippery for 2'.
+  \nboxitem{3}{Mage Armour}{Con}{306} Gives subject +4 armour bonus for 2 hours.
+  \nboxitem{4}{Silent Image}{Ill}{343} Creates minor image of your design in 6 10' cubes within 480' for concentration.
+\end{description}
+
+\end{document}
