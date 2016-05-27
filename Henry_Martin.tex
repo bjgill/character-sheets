@@ -1,0 +1,522 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{tabu}
+\usepackage{fullpage}
+\usepackage{wasysym}
+
+% table header
+\newcommand{\tabhead}[1]{\textsc{\small \textcolor{white}{#1}}\cellcolor{black}}
+
+% table title
+\newcommand{\tabtit}[1]{\textbf{\uppercase{\large #1}}}
+
+\newcommand{\m}{$-$}
+\newcommand{\p}{$+$}
+
+\begin{document}
+
+\twocolumn
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X|}
+    \hline 
+		\multicolumn{2}{|c|}{\tabhead{Fated Name}} \\ 
+		\hline 
+		\multicolumn{2}{|c|}{Henry Martin} \\ 
+		\hline 
+		\tabhead{Current Pursuit} & \tabhead{Station} \\  
+		\hline 
+		Mage & Reporters \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|X|X[0.5c]|}
+    \multicolumn{4}{c}{\tabtit{Aspects}} \\
+    \hline 
+	  \multicolumn{2}{|c}{\tabhead{Physical}} & \multicolumn{2}{|c|}{\tabhead{Mental}} \\ 
+	  \hline 
+	  \tabhead{Might} & \m 2 & \tabhead{Intellect} & \p 3 \\ 
+	  \hline 
+	  \tabhead{Grace} & \p 2 & \tabhead{Charm} & \p 0 \\ 
+	  \hline 
+	  \tabhead{Speed} & \p 1 & \tabhead{Cunning} & \p 1 \\ 
+	  \hline 
+	  \tabhead{Resilience} & \m 1 & \tabhead{Tenacity} & \m 2 \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|X|X[0.5c]|}
+    \multicolumn{4}{c}{\tabtit{Derived Aspects}} \\
+	  \hline 
+	  \tabhead{Defence} & 3 & \tabhead{Willpower} & 5 \\ 
+	  \hline 
+	  \tabhead{Armour} & 0 & \tabhead{Initiative} & 2 \\ 
+	  \hline 
+	  \tabhead{Walk} & 5 & \tabhead{Charge} & 5 \\ 
+	  \hline 
+	  \tabhead{Wounds} & 3/4 & \tabhead{Height} & 2 \\ 
+	  \hline 
+	\end{tabu}
+\end{table}
+
+% attacks 1
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \multicolumn{4}{c}{\tabtit{Attacks}} \\
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  Volyer Patent Revolver & 4 & 2/3/4 & 10 \\ 
+	  \hline 
+	  \tabhead{Special} & \tabhead{Reload} & \tabhead{Fired} & \tabhead{TN} \\ 
+	  \hline 
+	  ~ & 4 AP & ~~~~~~/7 & ~ \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{Ms -- No Witnesses -- target gains \emph{Unbeknownst}} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+% attacks 2
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  Bowie knife & -2 & 1/3/4 & 1 \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+%attacks 3
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[p]|X[0.5c]|X[0.5c]|X[0.35c]|}
+	  \hline 
+	  \tabhead{Name} & \tabhead{AV} & \tabhead{Damage} & \tabhead{Range} \\ 
+	  \hline 
+	  Garotte & 2 & 1/2/3 & 1 \\ 
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Special}} \\ 
+	  \hline 
+	  \multicolumn{4}{|l|}{Choking, Deadly, Finely Tuned, Snaring} \\
+	  \hline 
+	  \multicolumn{4}{|c|}{\tabhead{Triggers}} \\
+	  \hline 
+	  \multicolumn{4}{|l|}{} \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\begin{minipage}[t]{\textwidth}
+\section*{Pursuit Benefits}
+Draw a card upon failing to cast a Manifested Power spell.
+\end{minipage}
+
+\newpage
+
+% player name, money, destiny fulfilled and experience
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[2]|X[c]|}
+    \hline 
+		\tabhead{Player Name} & \tabhead{Guild Scrip} \\  
+		\hline 
+		Benjamin Gill & §5.3 \\ 
+		\hline
+		\tabhead{Destiny Steps Fulfilled} & \tabhead{Experience} \\  
+		\hline 
+		% use \Circle for unfilled and \CIRCLE for filled
+		\makebox[0.6 \columnwidth][s]{$\Circle$ $\Circle$ $\Circle$ $\Circle$ $\Circle$} & 0 \\ 
+		\hline 
+	\end{tabu}
+\end{table}
+
+% skills
+\setlength\tabcolsep{3pt} % default value: 6pt
+
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|c|c|l|c|X[c]|}
+	  \multicolumn{6}{c}{\tabtit{Skills}} \\
+	  \hline 
+	  % Tr is for any triggers. Format is [S][c] - Suit, condition, e.g. Ts for Tomes success.
+	  \tabhead{Skill} & \tabhead{AV} & \tabhead{Rate} & \tabhead{Aspect} & \tabhead{$\pm$} & \tabhead{Tr}\\ 
+	  \hline 
+	  So:Barter & 0 & 2 & Tenacity & ~ & ~ \\ 
+	  \hline 
+	  So:Bewitch & 0 & 0 & Charm &  &  \\ 
+	   \hline 
+	  Ac:Bureau. & 5 & 4 & Cunning & \p & Ts \\ 
+	   \hline 
+	  Tr:Centring & 1 & 3 & Tenacity &  & Cf \\ 
+	   \hline 
+	  So:Convince & 5 & 2 & Intellect &  & \\ 
+	   \hline 
+    So:Deceive & 8 & 5 & Intellect & T\p\p & Ts,Cs \\ 
+	  \hline 
+	  Ex:Doctor & 6 & 3 & Intellect &  & Ms \\ 
+	  \hline 
+	  Ac:Engineer. & 3 & 0 & Intellect &  &  \\ 
+	   \hline 
+	  Ex:Forgery & 5 & 4 & Cunning & \p & Ms \\ 
+	   \hline 
+	  Ex:Gambling & 1 & 0 & Cunning &  &  \\ 
+	   \hline 
+	  Ac:History & 3 & 0 & Intellect &  &  \\ 
+	   \hline 
+	  So:Intimidate & -2 & 0 & Tenacity &  &  \\ 
+	   \hline 
+	  So:Leadership & 0 & 0 & Charm &  &  \\ 
+	   \hline 
+	  Ac:Literacy & 3 & 2 & Cunning &  &  \\ 
+	   \hline 
+	  Tr:Notice & 3 & 2 & Cunning & ~ &  \\ 
+	   \hline 
+	  RC:Pistol & 4 & 2 & Grace &  &  \\ 
+	   \hline 
+	  Ma:Prestid. & 5/3 & 2 & Int/Cun &  &  \\ 
+	   \hline 
+	  Ex:Scrutiny & 6 & 5 & Cunning &  & Ms,Cs \\ 
+	   \hline 
+	  Tr:Stealth & 1 & 0 & Cunning &  &  \\ 
+	   \hline 
+    So:Teach & 3 & 0 & Intellect &  &  \\ 
+	   \hline 
+	    &  &  &  &  &  \\ 
+	   \hline 
+	    &  &  &  &  &  \\ 
+	   \hline 
+	    &  &  &  &  &  \\ 
+	   \hline 
+	    &  &  &  &  &  \\ 
+	   \hline 
+	    &  &  &  &  &  \\ 
+	  \hline
+	\end{tabu}
+\end{table}
+
+\setlength\tabcolsep{6pt} % default value: 6pt
+
+% party
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[1.5]|}
+	  \multicolumn{2}{c}{\tabtit{Party}} \\
+	  \hline 
+	  \tabhead{Character} & \tabhead{Notes} \\ 
+	  \hline 
+	  Gabriel D'Artois & Dandy  \\ 
+	  \hline 
+	  `Alfalfa' Jackie & Bayou guide/alchemist  \\ 
+	  \hline 
+	  `Jackie 2' & Robot. I know he's a wizard, and have faint hints of necromancy \\ 
+	  \hline 
+	  Major Quigley & Mercenary (with `Bessie') \\ 
+	  \hline
+	  `J'? & ??? hunter/martial artist?  \\ 
+	  \hline
+	  Clay Reyes & Engineer (M\&SU) -- died \\
+	  \hline 
+	\end{tabu}
+\end{table}
+
+\twocolumn
+
+% twist deck
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.5c]|}
+		\multicolumn{2}{c}{\tabtit{Twist Deck (white backs)}} \\ 
+		\hline 
+		\tabhead{Total Card Improvements} & \p 1 \\ 
+		\hline 
+  \end{tabu} 
+	\begin{tabu} to \columnwidth {|X[c]|X[2]|}
+		\hline 
+		\tabhead{Card} & \tabhead{Description} \\ 
+		\hline 
+		13 & Tomes \\ 
+		\hline 
+		12 & Masks \\ 
+		\hline 
+		11 & Crows \\ 
+		\hline 
+		10 & Rams \\ 
+		\hline 
+		9 & Tomes \\ 
+		\hline 
+		8 & Masks \\ 
+		\hline 
+		7 & Crows \\ 
+		\hline 
+		6 & Rams \\ 
+		\hline 
+		6 & Tomes \\ 
+		\hline 
+		4 & Masks \\ 
+		\hline 
+		3 & Crows \\ 
+		\hline 
+		2 & Rams \\ 
+		\hline 
+		1 & Tomes \\ 
+		\hline 
+  \end{tabu} 
+\end{table}
+
+% notes
+\begin{minipage}[t]{\textwidth}
+
+\section*{Archival Notes}
+
+\subsection*{Session 1}
+
+	\begin{itemize}
+	  \item Hatchino Chan (my contact) contracted us to find out where his workers were going. Turned out to be disease: we were unable to help. The Oni owes us a favour (after we `flushed out' the rat apothecary).
+	\end{itemize}
+	
+\subsection*{Session 2} 
+
+  \begin{itemize}
+    \item Henry Kinder paid us to get him to Innocence. Failed. Key phrase for banker: ``Susy together forever'' on soulstone dagger?
+  \end{itemize}
+  
+\subsection*{Session 3}
+
+  \begin{itemize}
+    \item Significant people: Alison Daid (journalist), Prof Wickers (Union member; curio shop), Hannibal Crow (mayor), Callaghan (barber, rival candidate, `communist')
+    \item Widow Ferris -- saloon proprietor; husband died 5 years ago; is very insistent that we kill nobody; §10 now and §10 on election (each)
+  \end{itemize}
+  
+\subsection*{Session 4}
+  
+  \begin{itemize}
+    \item Ortega brought on side by Jackie, bringing 13 votes.
+    \item Madame Stoville -- heavily in debt to guild banks (§1500 = §100/month). I've forged documents to reduce debt (§400 = §20/month)
+    \item Interesting persons: Mr Whistler, schoolmaster; Mitchells, expeditions; Derrick, local fighting pit; Tatterson Flay, haberdasher and creep/potential necromancer (though I do not know this).
+  \end{itemize}
+  
+\subsection*{Session 5}
+
+  \begin{itemize}
+    \item Doctor is a Ferris supporter (mysterious red-head) - secret things with robot
+    \item Innocence town estimated §200-300 tax per month
+    \item I convinced Callaghan to support us at the cost of being Deputy Mayor
+    \item Widow Ferris is scared by me, and has offered an extra §20 on election (§30 total). Should now be officially registered as a candidate.
+  \end{itemize}
+
+\end{minipage}
+
+\newpage
+
+% destiny
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\multicolumn{2}{c}{\tabtit{Destiny}} \\ 
+		\hline 
+		\tabhead{Southern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		When at last you look upon your beating heart & 8 Crows \\
+		\hline
+  \end{tabu} 
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Eastern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		the peer of a thousand faces will weep & 5 Masks \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Northern Destiny} & \tabhead{Card} \\ 
+		\hline 
+		for the silence brings inspiration at the door. & 8 Masks \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Western Destiny} & \tabhead{Card} \\ 
+		\hline 
+		Then, the ravens bless your children & 4 Rams \\
+		\hline
+  \end{tabu}  
+  \vspace{1 pt}
+  \newline
+	\begin{tabu} to \columnwidth {|X|X[0.3c]|}
+		\hline 
+		\tabhead{Station Destiny} & \tabhead{Card} \\ 
+		\hline 
+		and the arches will crumble. & 7 Rams \\
+		\hline
+  \end{tabu}  
+\end{table}
+
+% second sheet
+\onecolumn
+
+% fated name
+%\begin{table}[h!]
+%	\begin{tabu} to \columnwidth {|X[c]|}
+%    \hline 
+%		\tabhead{Fated Name} \\ 
+%		\hline 
+%		Henry Martin \\ 
+%		\hline 
+%	\end{tabu}
+%\end{table}
+
+% talents
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|l|X[4]|}
+		\multicolumn{3}{c}{\tabtit{Talents}} \\ 
+		\hline 
+		\tabhead{Source} & \tabhead{Talent} & \tabhead{Description} \\  
+		\hline 
+		Start & Twisted Fate & $\pm$ to 1 card in fate deck (no identical cards) \\   
+		\hline 
+		Infiltrator: 0 & Strike First & May add a single suit of choice to  attack someone who believes me to be friendly or who has not yet acted in Dramatic Time \\   
+		\hline 
+		Infiltrator: 1 & Sneaky & + to Deceive challenge duels \\   
+		\hline 
+		Infiltrator: 2 & Skill Mastery & + to Bureaucracy challenge duels \\   
+		\hline 
+		Infiltrator: 3 & Disguised & Cannot be the target of a charge action \\   
+		\hline 
+		Infiltrator: 4 & Specialised Skill & add Tomes to Deceive challenge duels \\   
+		\hline 
+		Infiltrator: 5 & Betrayal & Gains + to attack someone who believes me to be friendly or who has not yet acted in Dramatic Time \\   
+		\hline 
+		Infiltrator: 6 & Skill Mastery & + to Deceive challenge duels \\   
+		\hline 
+		Infiltrator: 7 & Infiltration (Guild) & See \textit{I.T.S.} pp. 98. \\   
+		\hline
+		Infiltrator: 8 & Great Fate & Draw an extra card from the fate deck at the start of the session \\   
+		\hline
+		Infiltrator: 9 & Endless Lies & Can choose to use Deceive in place of any other Social Skill \\   
+		\hline
+		Mage: 0/1 & New Manifestation & 7T; 1AP; Teleport: myself only, range 30m, defined delay  \\   
+		\hline
+	\end{tabu}
+\end{table}
+
+% Triggers
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|X[0.22]|l|l|X[0.26]|X|}
+		\multicolumn{5}{c}{\tabtit{Triggers}} \\ 
+		\hline 
+		\tabhead{Skill} & \tabhead{Suit} & \tabhead{Active} & \tabhead{Name} & \tabhead{Description} \\  
+		\hline   
+		Bureaucracy & Tomes & Success & Legal Documents & May produce documents to back up a claim. Any Social/Bureaucracy Challenges made to challenge the claim or change the mind of those who have seen the documents is at -. \\   
+		\hline 
+		Centring & Crows & Failure & That's It, I've Had It! & Draw a 1-handed weapon and make an immediate attack against the target who beat you. \\   
+		\hline
+		Deceive & Crows & Success & \textit{Guys, He Said It's Not A Real Knife!} & In narrative time, the target turns their back on you. You may draw a one-handed weapon and make an immediate attack at ++ to the attack flip. \\   
+		\hline
+		Deceive & Tomes & Success & Revelation & Target is so thoroughly convinced that they now adopt your opinion. \\   
+		\hline 
+		Doctor & Tomes & Success & Plenty of Bandages & Make another First Aid attempt against the same target. \\   
+		\hline 
+		Forgery & Masks & Success & Perfect Copy & Gain \p ~to any Convince or Deceive Challenge made regarding the forgery. \\   
+		\hline  
+		Scrutiny & Crows & Success & Ready for Anything & In Narrative Time, gain \p\p ~to Initiative if target performs an action leading to Dramatic Time. \\   
+		\hline
+		Scrutiny & Masks & Success & Political Eye & Learn target's Allegiance, or their most closely associated organisation. \\   
+		\hline 
+		Ranged/ Close & Masks & Success & No Witnesses & Target gains \emph{Unbeknownst}: may not attack anyone with Disguised talent until the end of the round. \\   
+		\hline 
+		 &  &  &  &  \\   
+		\hline 
+	\end{tabu}
+\end{table}
+
+% equipment
+\begin{table}[h!]
+	\begin{tabu} to \columnwidth {|l|X|}
+		\multicolumn{2}{c}{\tabtit{Equipment}} \\ 
+		\hline 
+		\tabhead{Item} & \tabhead{Description} \\  
+		\hline 
+		Forgery Toolkit & \p ~to Forgery challenge duels \\   
+		\hline 
+		Necessities & House/food/job/etc. \\   
+		\hline 
+		Volyer Patent Revolver & \& legacy charges: 47 \\   
+		\hline 
+		 &  \\   
+		\hline 
+		 &  \\   
+		\hline 
+		 &  \\   
+		\hline 
+	\end{tabu}
+\end{table}
+
+\onecolumn
+
+\section*{Notes}
+  
+\subsection*{Session 6}
+
+  \begin{itemize}
+    \item Got a note -- meet an hour before dawn at an abandoned warehouse, signed 'X'. I told Ferris about this, who said they'd inform the Sheriff.
+    \item It was a trap. We survived, killing [robot -- I wanted to bring him in alive] Crow's henchman (who is not necessarily human...(?)). Two of the mercenaries survived -- I offered them §5 each to turn and they are now my `henchmen'.
+    \item We have been taken to the prison along with Crow to find out what happened.
+    \item `J' also attacked us, but turned at the offer. Attempted to flee afterwards, but put to sleep by the robot. Taken to the doctor's surgery to recover.
+  \end{itemize}
+  
+\subsection*{Session 7}
+  
+  \begin{itemize}
+    \item Mercenaries Wilson Doyle and Albert Hodges paid and available at flop house for §1/day.
+    \item Quigley killed Crow! Ferris is now mayor.
+    \item Gorren, the banker, is a guild lawyer (gold mask).
+    \item I have agreed to meet Lucius the next time I am in Malafo city (and have got a suspended sentence)...
+    \item Persuaded Playhouse to put on shows to improve morale (gave Stoville forged documents), need to do similar for Feast Grill.
+    \item 170 people in the town, of which 50 are fighters
+  \end{itemize}
+  
+\subsection*{Session 8}
+
+  \begin{itemize}
+    \item Feast Grill now selling 30\% off food at wall.
+    \item Water shortage solved by Crow(?)
+    \item Derek and his men can form a blocking division
+    \item Trained some defenders in first aid
+    \item Ferris made mayor; I have been made `dictator' for the duration of the crisis - made well-received speech
+  \end{itemize}
+  
+\subsection*{Session 9}
+
+  \begin{itemize}
+    \item Beat off night attack. Lost one of my mercenaries and 20-30 townspersons.
+  \end{itemize}
+  
+\subsection*{Session 10}
+
+  \begin{itemize}
+    \item Evacuated to only defend town centre/well.
+    \item I think doppelgängers are allergic to lemons and cannot see blue.
+    \item Formally handed military control to Quigley.
+    \item Fought off effects of tiredness.
+    \item I asked Gabriel to search for potential escape routes.
+    \item I am in central compound for the start of the night.
+  \end{itemize}
+
+\end{document}
